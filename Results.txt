@@ -1,0 +1,16 @@
+#Follow Up Questions
+- What were some of the challenges you encountered?
+
+- Differentiate between Real DOM and Virtual DOM. List out a few differences.
+    1.Unlike Real DOM we do not need to create new elements and make them children
+        of the document for them to exist on the page. Instead return html like
+        code after modules are called.
+    2.
+
+- What are some problems that React can solve for us?
+    React is able to create buttons with their own functions without the need of
+    adding event listeners for every button that is created and located. We can
+    also use useState for important variables that are constantly being changed
+    throughout the run-through of the website.
+    Another thing that react can solve is to remove the necessity of loops that
+    handle the rerendering of DOM items. React will handle the rendering accordingly.
