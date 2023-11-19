@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/LouisOporto/Excersise6.git/static/css/main.d1b5524f.css",
+    "main.js": "/LouisOporto/Excersise6.git/static/js/main.a8a6e987.js",
+    "index.html": "/LouisOporto/Excersise6.git/index.html",
+    "main.d1b5524f.css.map": "/LouisOporto/Excersise6.git/static/css/main.d1b5524f.css.map",
+    "main.a8a6e987.js.map": "/LouisOporto/Excersise6.git/static/js/main.a8a6e987.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1b5524f.css",
+    "static/js/main.a8a6e987.js"
+  ]
+}
