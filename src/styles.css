@@ -69,6 +69,7 @@ ul {
 
 .status {
   margin-bottom: 10px;
+  color: white;
 }
 
 .game {
@@ -78,4 +79,5 @@ ul {
 
 .game-info {
   margin-left: 20px;
+color: white;
 }

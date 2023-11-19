@@ -1,0 +1,59 @@
+body {
+    background: radial-gradient(ellipse at top, #003a91, transparent),
+                radial-gradient(ellipse at bottom, #0dcc36, black);
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow:hidden;
+}
+
+.calBody {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    margin: auto;
+    padding: 10px;
+    background: linear-gradient(90deg, rgb(160, 160, 160), rgb(219, 219, 219));
+    border: 3px solid black;
+}
+
+.calButton {
+    background: #fff;
+    border: 2px solid rgb(34, 34, 34);
+    font-size: large;
+    margin: 5px;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(white, gray);
+}
+
+.display {
+    background-image: linear-gradient(white, gray);
+    margin: 5px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 230px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 7px black;
+    border-radius: 5px;
+    text-align: right;
+    padding: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+.operation {
+    background: linear-gradient(rgb(0,0,0), rgb(63, 63, 63));
+    color: white;
+}
+
+.clear {
+    background: linear-gradient(rgb(200, 0, 0), rgb(104, 0, 0));
+    color:white;
+}

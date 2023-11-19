@@ -1,6 +1,7 @@
 #Follow Up Questions
 - What were some of the challenges you encountered?
-
+    Having problems trying to classify buttons with multiple css classes.
+    
 - Differentiate between Real DOM and Virtual DOM. List out a few differences.
     1.Unlike Real DOM we do not need to create new elements and make them children
         of the document for them to exist on the page. Instead return html like
