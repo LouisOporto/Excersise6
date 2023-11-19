@@ -49,25 +49,25 @@ function Calculator() {
           <CalculatorButton value="7" onCalculatorButtonClick={() => handleClick('7')} />
           <CalculatorButton value="8" onCalculatorButtonClick={() => handleClick('8')} />
           <CalculatorButton value="9" onCalculatorButtonClick={() => handleClick('9')} />
-          <CalculatorButton className="operation" value="/" onCalculatorButtonClick={() => handleClick('/')} />
+          <CalculatorButton value="/" onCalculatorButtonClick={() => handleClick('/')} />
         </div>
         <div className="board-row">
           <CalculatorButton value="4" onCalculatorButtonClick={() => handleClick('4')} />
           <CalculatorButton value="5" onCalculatorButtonClick={() => handleClick('5')} />
           <CalculatorButton value="6" onCalculatorButtonClick={() => handleClick('6')} />
-          <CalculatorButton className="operation" value="X" onCalculatorButtonClick={() => handleClick('*')} />
+          <CalculatorButton value="X" onCalculatorButtonClick={() => handleClick('*')} />
         </div>
         <div className="board-row">
           <CalculatorButton value="1" onCalculatorButtonClick={() => handleClick('1')} />
           <CalculatorButton value="2" onCalculatorButtonClick={() => handleClick('2')} />
           <CalculatorButton value="3" onCalculatorButtonClick={() => handleClick('3')} />
-          <CalculatorButton className="operation" value="-" onCalculatorButtonClick={() => handleClick('-')} />
+          <CalculatorButton value="-" onCalculatorButtonClick={() => handleClick('-')} />
         </div>
         <div className="board-row">
-          <CalculatorButton className="clear" value="C" onCalculatorButtonClick={() => handleClick('C')} />
+          <CalculatorButton value="C" onCalculatorButtonClick={() => handleClick('C')} />
           <CalculatorButton value="0" onCalculatorButtonClick={() => handleClick(0)} />
-          <CalculatorButton className="operation" value="=" onCalculatorButtonClick={() => handleClick('=')} />
-          <CalculatorButton className="operation" value="+" onCalculatorButtonClick={() => handleClick('+')} />
+          <CalculatorButton value="=" onCalculatorButtonClick={() => handleClick('=')} />
+          <CalculatorButton value="+" onCalculatorButtonClick={() => handleClick('+')} />
         </div>
       </div>
     </>
@@ -92,12 +92,12 @@ function calculateAnswer(problem) {
     numbers[i] = newNumber;
   }
 
-  let result = numbers[0];
+  let result = parseFloat(numbers[0]);
   for (let i = 1; i < numbers.length; i++) {
     if (operations[i - 1] === '+') {
-      result += numbers[i];
+      result += parseFloat(numbers[i]);
     } else {
-      result -= numbers[i];
+      result -= parseFloat(numbers[i]);
     }
   }
   return result;

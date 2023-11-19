@@ -1,17 +1,34 @@
 #Follow Up Questions
 - What were some of the challenges you encountered?
     Having problems trying to classify buttons with multiple css classes.
-    
+    At first I thought it wasn't possible to add a another class for certain
+    buttons on the calculator with different styles (i.e. operations). The
+    solution I found was to create a variable that would act as the className.
+
+    The previous time I did the calculator project I ended up using the eval()
+    function which wasn't the proper way of doing it. So instead, I used a
+    method using .split and .filter. To follow the operation steps of PEMDAS.
+
+
+
 - Differentiate between Real DOM and Virtual DOM. List out a few differences.
     1.Unlike Real DOM we do not need to create new elements and make them children
         of the document for them to exist on the page. Instead return html like
         code after modules are called.
-    2.
+    2.Virtual DOM allows the existence of the static page to be always
+        accessible to the user, but can load the section of html that has been
+        updated and seamlessly merge them together.
 
 - What are some problems that React can solve for us?
     React is able to create buttons with their own functions without the need of
     adding event listeners for every button that is created and located. We can
     also use useState for important variables that are constantly being changed
     throughout the run-through of the website.
+
     Another thing that react can solve is to remove the necessity of loops that
     handle the rerendering of DOM items. React will handle the rendering accordingly.
+
+    To handle the updating of the calculator screen I need to handle different
+    actions that could change the screen. I used a useState to create a single variable
+    that would be displayed on the screen, and setState depending on the action made
+    Cut the to work to handle each possible interaction.
